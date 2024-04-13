@@ -1,0 +1,143 @@
+
+<!-- FlexBox, Grid and Media Queries
+-------------------------------
+
+Task -- -->
+
+<!-- 1) Create the same navbar created in last Practice Set(5) but do the spacing using flexbox.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: palegreen;
+            border-radius: 5px;
+        }
+        nav a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Help</a>
+    </nav>
+</body>
+</html> -->
+
+<!-- 2) Use flexbox to center an image inside a div.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+           background-color: burlywood;
+           border: 2px solid;
+           height: 200px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+        img{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="../../Source Code/myntra.jpg" alt="myntra image">
+    </div>
+</body>
+</html> -->
+
+<!-- 3) Create a div with three boxes where two boxes have fixed size but the third box grows and shrinks with container size.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            margin: 5px;
+            flex-shrink: 0;
+        }
+       
+        #container{
+            border: 2px solid;
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+
+        }
+
+        #box3{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+    </div>
+    
+</body>
+</html> -->
+
+<!-- 4) Create a div of 50px with color green. It should respond to the following conditions:
+      i) Keep color green under 300px of view port size 
+      ii) Change color to red from 300px to 400px.
+      iii) Change color to blue after 400px.
+      
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+        }
+        @media screen and (min-width: 300px) and (max-width:400px){
+            #box1{
+                background-color: red;
+            }
+        } 
+
+        @media screen and (min-width:400px) {
+            #box1{
+                background-color: blue;
+            }
+        }
+    </style>
+ </head>
+ <body>
+    <div id="box1">Box1</div>
+ </body>
+ </html>      -->

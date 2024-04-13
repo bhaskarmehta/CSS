@@ -1,0 +1,120 @@
+
+<!-- Task 1 - Create a div with height and width 200px and observe different values in the box model by inspecting.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Box</div>
+</body>
+</html> -->
+
+<!-- Task 2 - Create a button and give 10px padding to top and bottom and 15px on the sides.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: red;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Submit</button>
+</body>
+</html> -->
+
+<!-- Task 3 -  Add 100px margin to the button on all sides.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 20px;
+            width: 50px;
+            background-color: red;
+            margin: 100px;
+            box-sizing: content-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <button type="submit">Submit</button>
+</body>
+</html> -->
+
+
+<!-- Task 4 - Add dotter border with color red and so much that the button becomes a circle.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #radius{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            margin: 10px;
+            padding: 5px;
+            border: 2px dotted ;
+            border-radius: 37px;
+        }
+    </style>
+</head>
+<body>
+    <div id="radius">Circle</div>
+</body>
+</html> -->
+
+
+<!-- Task 5 - Create two boxes with different box-sizing values and observe changes in box model.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            margin-bottom: 25px;
+        }
+        #second{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            margin-top: 30px;   /* If we have two boxes and margin in box1 is 25px and margin in box2 is 30 px then the margin will be 30 px. It means that more values will have precedence. */
+        }
+    </style>
+</head>
+<body>
+    <div id="first">First</div>
+    <div id="second">Second</div>
+</body>
+</html> -->
